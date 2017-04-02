@@ -5,12 +5,6 @@ var highestScoreCount=0, lowestScoreCount=0;
 
 for (var i = 1; i <seriesScores.length; i++) {
 
-if(highestScore==0&&lowestScore==0){
-highestScore=seriesScores[i];
-lowestScore=seriesScores[i];
-}
-else{
-
 
 	if(highestScore<seriesScores[i]){
        
@@ -20,15 +14,11 @@ else{
 	}
 	else if(lowestScore>seriesScores[i]){
         
-        if(seriesScores[i]>0){
-lowestScore=seriesScores[i];
+	lowestScore=seriesScores[i];
  	lowestScoreCount++;
-        }
-	
- 	
+        	
 	}
-}
-	
+
 }
 
 
